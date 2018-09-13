@@ -3,18 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.Cogniphi.School.TestSuite.HomePage"/>
+      <class name="com.Cogniphi.School.TestSuite.SpotMyFleetSuite"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.Cogniphi.School.TestSuite.HomePage">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="TC_001_verify_Attendance_DetailsPage"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.Cogniphi.School.TestSuite.HomePage -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

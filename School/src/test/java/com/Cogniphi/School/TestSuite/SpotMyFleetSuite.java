@@ -1,6 +1,6 @@
 package com.Cogniphi.School.TestSuite;
 
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -9,23 +9,23 @@ import com.Cogniphi.School.LogInPage;
 import UTILITY.BaseClass;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 
-public class HomePage extends BaseClass {
-
+public class SpotMyFleetSuite extends BaseClass {
+LogInPage login ;
 	@Test(groups = { "Sanity", "Regression" })
-	public void TC_001_verify_Attendance_DetailsPage() throws InterruptedException {
+	public void TC_001_verifyVehiclesAndTrips() throws InterruptedException {
 		
 
 	}
 
-	
-
 	@BeforeClass
 	public void beforeClass() throws ATUTestRecorderException {
-		LogInPage.chrome_LogIn();
+		login = new LogInPage();		
+		login.chromeLogin();
 	}
 
-	@AfterClass
+	@AfterTest
 	public void afterClass() {
-		// BaseClass.closeBrowser();
+		driver.quit();
 	}
+	
 }
